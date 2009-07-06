@@ -26,9 +26,9 @@ has eval_perl => (
 );
 
 has tt => (
-  is   => 'ro',
   isa  => 'Template',
   lazy => 1,
+  accessor => '_tt',
   init_arg => undef,
   default  => sub {
     Template->new({
