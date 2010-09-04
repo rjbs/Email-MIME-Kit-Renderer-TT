@@ -1,6 +1,8 @@
 Revision history for Email-MIME-Kit-Renderer-TT
 
 {{$NEXT}}
+
+1.000     2010-09-04 15:51:21 America/New_York
           add template_parameters and strict
 
           fix bizarre misuses of lazy/default
