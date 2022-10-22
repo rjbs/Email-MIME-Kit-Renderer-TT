@@ -43,8 +43,8 @@ sub render {
   $stash ||= {};
 
   my $output;
-  $self->tt->process($input_ref, $stash, \$output)
-    or die $self->tt->error;
+  $self->_tt->process($input_ref, $stash, \$output)
+    or die $self->_tt->error;
 
   return \$output;
 }
@@ -67,7 +67,7 @@ has template_parameters => (
   default => sub { {} },
 );
 
-has tt => (
+has _tt => (
   is   => 'ro',
   isa  => 'Template',
   lazy => 1,
