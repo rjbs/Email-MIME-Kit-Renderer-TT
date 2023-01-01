@@ -1,6 +1,7 @@
 Revision history for Email-MIME-Kit-Renderer-TT
 
 {{$NEXT}}
+        - update author contact info
 
 1.002     2022-10-22 16:39:55-04:00 America/New_York
         - make the attribute that stores the Template object private (don't
